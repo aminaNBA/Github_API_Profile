@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  background-color: #dbeafe;
+}
+.container .get-profile {
+  padding: 20px;
+  display: flex;
+}
+.container .get-profile input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+  height: 54px;
+}
+.container .get-profile input:focus {
+  outline: 2px solid #60a5fa;
+}
+.container .get-profile .get-button {
+  width: 140px;
+  margin-left: 10px;
+  height: 54px;
+  background-color: #60a5fa;
+  color: #fff;
+  line-height: 54px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .show-profile {
+  display: flex;
+  padding: 20px;
+  background-color: #eff6ff;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .container .show-profile {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container .show-profile .owner {
+  width: 250px;
+  background-color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .container .show-profile .owner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.container .show-profile .owner .avatar img {
+  margin: 10px 5px 0;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+.container .show-profile .owner .profile-name {
+  text-align: center;
+}
+.container .show-profile .owner .follow {
+  display: flex;
+  justify-content: space-around;
+}
+.container .show-profile .owner .follow p {
+  text-align: center;
+}
+.container .show-profile .repos {
+  width: 100%;
+  margin-inline: 20px 0;
+}
+.container .show-profile .repos .title {
+  text-align: center;
+  background-color: #fff;
+  margin: 0 auto 20px;
+}
+.container .show-profile .repos .box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-column-gap: 2rem;
+}
+.container .show-profile .repos .box .visit,
+.container .show-profile .repos .box .live {
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #dbeafe;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.container .show-profile .repos .box .visit:hover,
+.container .show-profile .repos .box .live:hover {
+  transform: scale(0.95);
+  background-color: #60a5fa;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
